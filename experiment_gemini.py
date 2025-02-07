@@ -3,6 +3,7 @@ from google.generativeai.types import HarmCategory, HarmBlockThreshold
 from utils_logiqa import *
 from utils_truthfulqa import *
 from utils_mmlu import *
+from utils_bigbench import *
 
 
 GOOGLE_API_KEY = '<PLEASE_USE_YOUR_API_KEY>'
@@ -23,5 +24,6 @@ def get_gemini_result(prompt):
 
 if __name__ == "__main__":
     experiment_logiqa(get_gemini_result)
-    experiment_truthfulqa(get_gemini_result, start=713)
-    experiment_mmlu(get_gemini_result, start=1126)
+    experiment_truthfulqa(get_gemini_result)
+    experiment_mmlu(get_gemini_result)
+    experiment_bigbench(get_claude_result)

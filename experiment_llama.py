@@ -2,6 +2,7 @@ from llamaapi import LlamaAPI
 from utils_logiqa import *
 from utils_truthfulqa import *
 from utils_mmlu import *
+from utils_bigbench import *
 from openai import OpenAI
 
 
@@ -31,3 +32,4 @@ if __name__ == "__main__":
     experiment_truthfulqa(get_llama_result)
     experiment_mmlu(get_llama_result)
     experiment_logiqa(get_llama_result)
+    experiment_bigbench(get_claude_result)

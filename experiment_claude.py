@@ -4,6 +4,7 @@ import anthropic
 from utils_logiqa import *
 from utils_truthfulqa import *
 from utils_mmlu import *
+from utils_bigbench import *
 
 
 API_KEY = '<PLEASE_USE_YOUR_API_KEY>'
@@ -37,3 +38,4 @@ if __name__ == "__main__":
     experiment_logiqa(get_claude_result)
     experiment_truthfulqa(get_claude_result)
     experiment_mmlu(get_claude_result)
+    experiment_bigbench(get_claude_result)

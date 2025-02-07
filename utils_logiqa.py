@@ -5,7 +5,7 @@ import pandas as pd
 
 # To download LogiQA dataset, please visit: https://github.com/csitfun/LogiQA2.0
 def get_reasoning_data_logiqa(start=0, clip=1000):
-    file = './LogiQA2.0-main/logiqa/DATA/LOGIQA/train.txt'
+    file = './data/LogiQA2.0-main/logiqa/DATA/LOGIQA/train.txt'
     json_objects = []
 
     count = start

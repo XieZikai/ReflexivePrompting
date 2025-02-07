@@ -2,6 +2,7 @@ from openai import OpenAI
 from utils_logiqa import *
 from utils_truthfulqa import *
 from utils_mmlu import *
+from utils_bigbench import *
 import os
 
 
@@ -25,3 +26,4 @@ if __name__ == "__main__":
     experiment_logiqa(get_gpt_result)
     experiment_truthfulqa(get_gpt_result)
     experiment_mmlu(get_gpt_result)
+    experiment_bigbench(get_claude_result)
